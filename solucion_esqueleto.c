@@ -301,8 +301,8 @@ int gameBoardCheckAndClearLines(GameBoard* board) {
             for (int c = 0; c < GRID_COLS; c++) {
                 blank->cells[c] = 0;
                 gameBoardAddParticle(board,
-                                     OFFSET_X + c * CELL_SIZE + CELL_SIZE / 2 - 3,
-                                     OFFSET_Y + index * CELL_SIZE + CELL_SIZE / 2 - 3,
+                                     OFFSET_X + c * CELL_SIZE + CELL_SIZE / 2,
+                                     OFFSET_Y + index * CELL_SIZE + CELL_SIZE / 2,
                                      curr->cells[c]);
             }
             // Desenlazar: si era la primera fila se actualiza first_row, si no, el next del anterior.
